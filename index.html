@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compteur de monnaie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="euro.png">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h1>Calculateur de Monnaie</h1>
+    <form id="monnaieForm">
+        <label for="montantRecu"></label>
+        <input type="number" id="montantRecu" name="montantRecu" placeholder="Montant Reçu" step="0.01" required>
+        <br>
+        <label for="montantDu"></label>
+        <input type="number" id="montantDu" name="montantDu" placeholder="Montant Dû" step="0.01" required>
+        <br>
+        <button type="submit">Calculer</button>
+    </form>
+    <table id="resultats">
+        <thead style="display: none;">
+            <tr>
+                <th>Pièce/Billet</th>
+                <th>Quantité</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Les résultats seront affichés ici -->
+        </tbody>
+    </table>
+</body>
+</html>
