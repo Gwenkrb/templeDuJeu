@@ -1,0 +1,27 @@
+Je me suis donné pour objectif de faire cet exercice en deux heures afin de simuler des contraintes d'entreprises et d'avoir un délai à respecter.
+
+18h30 : Début de l'exercice.
+
+19h : Fin de l'écriture de la fonction calculerChange() à  avec le tableau piecesARendre sous cette forme pour 7.76€ de monnaie : [ 5, 2, 0.5, 0.2, 0.05, 0.01 ].
+
+Des tests en console avec node.js ont montré des calculs de monnaie incohérents, j'ai perdu un peu de temps à comprendre pourquoi avant de me souvenir des problèmes qu'il pouvait y avoir avec des problèmes d'arrondis en JavaScript avec les décimales. J'ai donc rajouté cette ligne qui a tout reglé : monnaie = parseFloat(monnaie.toFixed(2));
+
+19h30 : Sur la deuxième demi-heure, j'ai surtout travaillé sur l'ajout d'un compteur pour noter le nombre d'occurences de pièces/billets à utiliser pour rendre la monnaie, et modifié l'affichage pour ne garder que le nombre final de pièces en supprimant donc les doublons.
+Affichage avant correction :
+  { valeurPiece: 2, Nb: 1 },
+  { valeurPiece: 2, Nb: 2 },
+  { valeurPiece: 0.2, Nb: 1 },
+  { valeurPiece: 0.05, Nb: 1 },
+  { valeurPiece: 0.02, Nb: 1 } 
+
+21h15 : Reprise du projet pour créer un visuel dynamique grâce avec HTML, CSS et l'ajout de fonctionnalités en JavaScript (addEventListener lors de la soumission du formulaire et méthode afficherResultats()).
+
+21h45 : Fin de l'écriture du code pour les pages HTML et CSS, j'ai passé du temps surtout sur l'injection des données, reçues dans les input html, dans le code JavaScript.
+
+22h15 : Fin du projet et rajout (après quelques tests de dernière minute) d'une condition pour le cas ou la somme reçue correspond parfaitement à la somme dûe et autre petite correction en rajoutant - 0.001 (trouvé grâce à Google) dans ma boucle while. Le tableau ne s'affichait pas je testais une différence de seulement 1 centime entre le montant reçu et le montant dû. Quelques dernières modifications de CSS.
+
+Fin.
+
+Possibles évolutions du code
+ - regarder l'argent disponible en caisse et voir si on a la capacité de rendre la monnaie en liquide ou non.
+ - regarder quelles pièces/billets sont le plus en caisse pour éviter d'être en rupture d'une certaine valeur.
